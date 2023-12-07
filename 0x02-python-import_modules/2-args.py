@@ -6,6 +6,7 @@ if __name__ == "__main__":
     arg_str = "argument" if argc == 1 else "arguments"
 
     print("{} {}{}:".format(argc, arg_str, '.' if argc == 0 else ''))
-    
+
     for i, arg in enumerate(argv[1:], start=1):
-        print("{}: {}".format(i, arg))
+        print("{}. {}".format(i, arg))
+
