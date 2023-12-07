@@ -6,7 +6,6 @@ def print_last_digit(number):
 
 if __name__ == "__main__":
 
-
     print_last_digit(98)
     print_last_digit(0)
     r = print_last_digit(-1024)
