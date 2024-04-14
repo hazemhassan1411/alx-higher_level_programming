@@ -4,9 +4,9 @@ def best_score(a_dictionary):
         return None
     mv = 0
     mk = None
-    
+
     for k, v in a_dictionary.items():
         if v > mv:
             mv = v
             mk = k    
-        return mk
+    return mk
