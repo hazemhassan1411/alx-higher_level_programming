@@ -1,4 +1,7 @@
 #!/usr/bin/python3
-class Square:
+"""comment"""
 
+
+class Square:
+    """comment"""
     pass
