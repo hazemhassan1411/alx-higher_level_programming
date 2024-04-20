@@ -7,5 +7,5 @@ def best_score(a_dictionary):
     for k, v in a_dictionary.items():
         if v > mv:
             mv = v
-            mk = k    
+            mk = k
     return mk
