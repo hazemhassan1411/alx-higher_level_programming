@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """square class"""
 
+
 class Square:
     """square class"""
 
@@ -23,5 +24,5 @@ class Square:
         self.__size = value
 
     def area(self):
-    
-        return  self.__size ** 2
+
+        return self.__size ** 2
