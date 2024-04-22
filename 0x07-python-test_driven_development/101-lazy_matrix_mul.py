@@ -2,7 +2,7 @@
 """
 This module multiply 2 matricies using numpy module
 """
-import numpy # type: ignore
+import numpy  # type: ignore
 
 
 def lazy_matrix_mul(m_a, m_b):
