@@ -10,7 +10,6 @@ class Rectangle:
         """square class"""
         self.hight = height
         self.width = width
- 
 
     @property
     def width(self):
