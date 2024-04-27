@@ -6,7 +6,7 @@ class Rectangle:
     """rectangle"""
     def __init__(self, width=0, height=0):
         """square class"""
-        self.hight = height
+        self.height = height
         self.width = width
 
     @property
