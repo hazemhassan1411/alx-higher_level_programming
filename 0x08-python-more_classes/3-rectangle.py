@@ -49,9 +49,9 @@ class Rectangle:
         return (self.__height * 2) + (self.__width * 2)
 
     def __str__(self):
-
+        """square class"""
         string = ""
-        if self.height != 0 and self.__width != 0:
+        if self.__width != 0 and self.height != 0:
             string += "\n".join("#" * self.__width
                                 for j in range(self.__height))
             return string
