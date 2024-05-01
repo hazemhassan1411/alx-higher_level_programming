@@ -56,10 +56,11 @@ class Rectangle:
     def __str__(self):
         if not self.width or not self.height:
             return ""
-        return ((str(self.print_symbol) * self.width + "\n") * self.height)[:-1]
+        return ((str(self.print_symbol) * self.width + "\n")
+                * self.height)[:-1]
 
     def __repr__(self):
-        return "Rectangle(" + str(self.__width) + "," + str (self.height) + ")"
+        return "Rectangle(" + str(self.__width) + "," + str(self.height) + ")"
 
     def __del__(self):
         print("Bye rectangle...")
