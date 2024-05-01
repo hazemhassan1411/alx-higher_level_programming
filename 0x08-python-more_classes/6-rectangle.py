@@ -13,10 +13,6 @@ class Rectangle:
         self.width = width
         Rectangle.number_of_instance += 1
 
-    def __del__(self):
-        print("Bye rectangle...")
-        Rectangle.number_of_instance -= 1
-
     @property
     def width(self):
         """square class"""
@@ -63,3 +59,7 @@ class Rectangle:
 
     def __repr__(self):
         return "Rectangle({:d}, {:d})".format(self.__width, self.height)
+
+    def __del__(self):
+        print("Bye rectangle...")
+        Rectangle.number_of_instance -= 1
