@@ -51,6 +51,8 @@ class Rectangle:
     def __str__(self):
         """square class"""
         string = ""
+        if self.height == 0 or self.__width == 0:
+            print()
         if self.__width != 0 or self.height != 0:
             string += "\n".join("#" * self.__width
                                 for j in range(self.__height))
