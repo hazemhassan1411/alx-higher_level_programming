@@ -2,15 +2,18 @@
 """hazem is here"""
 
 import sys
+import os
+
 save_to_json_file = __import__('5-save_to_json_file.py').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file.py').load_from_json_file
 
-arglist = list(sys.argv[1:])
+filename = "add_item.json"
 
-try:
-    old_data = load_from_json_file('add_item.json')
-except Exception:
-    old_data = []
+if os.path.exists(filename):
+    items = load_from_json_file(filename)
+else:
+    items = []
 
-old_data.extend(arglist)
-save_to_json_file(old_data, 'add_item.json')
+items.extend(sys.argv[1:])
+
+save_to_json_file(items, filename)
