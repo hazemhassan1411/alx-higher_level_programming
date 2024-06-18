@@ -1,26 +1,16 @@
 #!/usr/bin/python3
-"""hazem is here"""
+'''hazem'''
 
 import sys
-import os
+save_to_json_file = __import__('5-save_to_json_file.py').save_to_json_file
+load_from_json_file = __import__('6-load_from_json_file.py').load_from_json_file
 
-# Import the functions from the previous tasks
-from save_to_json_file import save_to_json_file
-from load_from_json_file import load_from_json_file
+arglist = list(sys.argv[1:])
 
-filename = "add_item.json"
-
-# Initialize the list
 try:
-    if os.path.exists(filename) and os.path.getsize(filename) > 0:
-        items = load_from_json_file(filename)
-    else:
-        items = []
+    old_data = load_from_json_file('add_item.json')
 except Exception:
-    items = []
+    old_data = []
 
-# Add all arguments to the list
-items.extend(sys.argv[1:])
-
-# Save the list to the file
-save_to_json_file(items, filename)
+old_data.extend(arglist)
+save_to_json_file(old_data, 'add_item.json')
