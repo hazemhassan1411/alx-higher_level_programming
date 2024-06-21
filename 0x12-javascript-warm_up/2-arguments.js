@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 /* hiii */
 const args = process.argv.slice(2);
 
